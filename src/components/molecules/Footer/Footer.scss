@@ -1,0 +1,218 @@
+@include mobile {
+  body {
+    display: block;
+    background-color: transparent;
+    font-weight: 300;
+    font-family: "Satoshi", sans-serif;
+  }
+  .footer {
+    display: flex;
+    background-color: rgb(9, 8, 8);
+    padding: 7% 8%;
+    flex-direction: column;
+  }
+
+  .containerFooterInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: inherit;
+    
+  }
+  .containerFooterInfo h3 {
+    color: $WhiteColor;
+    font-size: 19px;
+    font-weight: 400;
+    font-family: "Clash Display", sans-serif;
+    margin-bottom: 0%;
+  }
+  .containerFooterInfo p {
+    font-size: 14px;
+    line-height: 110%;
+    font-weight: 200;
+    color: #fff;
+  }
+ 
+
+  // container containerMenuCategoriesOurCompany
+  .containerMenuCategoriesOurCompany {
+    display: flex;
+    height: 250px;
+  }
+  .containerFooterCategories {
+    display: none;
+    margin-left: 10%;
+  }
+  .containerOurCompany {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: inherit;
+  }
+  .containerOurCompany h5 {
+    font-size: 19px;
+    font-weight: 400;
+    font-family: "Clash Display", sans-serif;
+    color: $WhiteColor;
+  }
+  .containerOurCompany p {
+    font-size: 16px;
+    font-weight: 300;
+    color: $WhiteColor;
+  }
+  .containerFooterMenu {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: inherit;
+    margin-left: 10%;
+  }
+  .containerFooterMenu h5 {
+    font-size: 19px;
+    font-weight: 400;
+    font-family: "Clash Display", sans-serif;
+    color: $WhiteColor;
+  }
+  .containerFooterMenu p {
+    font-size: 16px;
+    font-weight: 300;
+    color: $WhiteColor;
+  }
+  .containerIconSocialLinkDesktop {
+    display: none !important;
+  }
+
+  // container containerLineDevide
+  .containerLineDevide {
+    align-self: center;
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .containerLineDevide div {
+    width: inherit;
+    height: 1px;
+    background-color: $LightGreyColor;
+    margin-bottom: 5%;
+  }
+  .containerLineDevide p {
+    align-self: center;
+    font-size: 15px;
+    line-height: 110%;
+    font-family: "Satoshi", sans-serif;
+    color: #fff;
+  }
+}
+
+@include tablet {
+  body {
+    display: block;
+  }
+  .footer {
+    display: inherit;
+    padding: 50px;
+  }
+  .footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .containerInfoAndSocialLinks {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    padding-top: 12%;
+  }
+  .containerFooterInfo {
+    display: flex;
+    flex-direction: column !important;
+    width: 45%;
+    height: inherit;
+  }
+  .containerSocialLinks {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column !important;
+    width: 55%;
+    margin-top: -20%;
+    height: inherit;
+  }
+  .containerSocialLinks h5 {
+    font-size: 20px;
+    font-weight: 400;
+    width: inherit !important;
+  }
+  .containerSocialLinks div {
+    display: inline-block;
+    margin-left: 4%;
+    margin-bottom: 15%;
+  }
+  .containerMenuCategoriesOurCompany {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
+    width: 60%;
+    margin-left: 20%;
+  }
+  .containerOurCompany {
+    display: flex;
+    flex-direction: column !important;
+    width: 33%;
+    height: inherit;
+  }
+  .containerFooterMenu {
+    display: flex;
+    flex-direction: column !important;
+    width: 33%;
+    height: inherit;
+  }
+  .containerFooterCategories {
+    display: flex;
+    flex-direction: column !important;
+    width: 33%;
+    height: inherit;
+  }
+  .containerFooterCategories h5 {
+    font-size: 19px;
+    font-weight: 400;
+    font-family: "Clash Display", sans-serif;
+    color: $WhiteColor;
+  }
+  .containerFooterCategories p {
+    font-size: 16px;
+    font-weight: 300;
+    color: $WhiteColor;
+  }
+  .containerLineDevide {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .containerLineDevide div {
+    margin: 0em auto 1em auto !important;
+  }
+  .containerLineDevide p {
+    margin-top: 2%;
+    align-self: flex-start !important;
+  }
+}
+
+@include desktop {
+  .containerSocialLinks {
+    width: 100%;
+    div {
+      width: 100%;
+      .containerIconSocialLinks2,
+      .containerIconSocialLinks1 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+@import "../index.scss";
+
+//--------------------------------------------
+.container {
+  background-color: #f9f9f9;
+
+  @include desktop {
+    // padding: 50px 80px;
+  }
+}
+
+.grid {
+  @include mobile {
+    align-items: center;
+  }
+}
+
+.productDetail {
+  @include mobile {
+    &-img {
+      width: 390px;
+      max-width: 100%;
+
+      height: 390px;
+      object-fit: cover;
+    }
+  }
+  @include desktop {
+    &-img {
+      width: 660px;
+      max-width: 100%;
+      height: 660px;
+      object-fit: cover;
+    }
+  }
+  &__topContent {
+    color: $main;
+    @include mobile {
+      margin-bottom: 28px;
+    }
+    @include desktop {
+    }
+    &-name {
+      color: $main;
+      font-weight: bold;
+      @include mobile {
+        @include font-size(36px);
+      }
+      @include desktop {
+        @include font-size(24px);
+      }
+    }
+    &-price {
+      display: inline-block;
+      padding: 5px;
+      border-radius: 2px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      margin-top: 5px;
+      font-weight: bold;
+    }
+  }
+  &__description {
+    color: $main;
+    margin-bottom: 50px;
+    max-width: 498px;
+    width: 100%;
+
+    &-title {
+      font-weight: bold;
+    }
+    &-content {
+      margin-bottom: 16px;
+    }
+    &-colors {
+      margin-top: 15px;
+      list-style: none;
+      display: flex;
+      gap: 10px;
+    }
+    &-color {
+      width: 40px;
+      height: 40px;
+      border-radius: 100px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      cursor: pointer;
+    }
+  }
+  &__dimension {
+    font-weight: bold;
+
+    color: $main;
+
+    &-title {
+      margin-bottom: 16px;
+    }
+    &-sizes {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+  }
+  &__quantity {
+    font-weight: bold;
+
+    color: $main;
+    margin-top: 10px;
+  }
+}
+
+.css-vj1n65-MuiGrid-root {
+  display: flex;
+  justify-content: center;
+}

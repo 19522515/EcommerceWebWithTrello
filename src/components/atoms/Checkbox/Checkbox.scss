@@ -1,0 +1,15 @@
+/*
+ * scss for the checkbox using in authentication
+ * file: Checkbox.scss
+ */
+.checkbox {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  & span {
+    display: inline-block;
+    text-align: start;
+  }
+}

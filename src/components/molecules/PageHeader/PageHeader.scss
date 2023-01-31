@@ -1,0 +1,55 @@
+@include mobile {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 5%;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .header h2 {
+    font-size: 2em;
+    font-weight: 400;
+    font-family: "Clash Display", sans-serif;
+    color: $DarkPrimaryColor;
+    width: 2500px !important;
+    align-items: center;
+    padding:0 !important;
+    margin-bottom: -250px;
+    margin-top: -150px;
+  }
+  .btnViewOurProducts {
+    width: 100%;
+  }
+  .header div {
+    width: 100%;
+    align-self: center;
+  }
+}
+
+@include tablet {
+  .header {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3em 7em 3em 7em;
+    padding-top: 200px;
+  }
+  .header h2 {
+    display: inline-block;
+    text-align: left;
+    padding-right: 15%;
+    width: 80%;
+    max-width: 70%;
+    margin-right: 0;
+    align-self: center;
+  }
+  .header div {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    width: 20%;
+  }
+}

@@ -1,0 +1,27 @@
+/*
+ * scss for the button using in authentication
+ * file: ButtonGoogle.scss
+ */
+.button {
+  &__signUp {
+    width: 100%;
+    padding: 6px 0;
+    border-radius: 5px;
+    border: 1px solid $border-grey;
+    margin-bottom: 10px;
+
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-weight: 600;
+      @include font-size(16px);
+      color: $text-main;
+    }
+    &-icon {
+    }
+    &-text {
+    }
+  }
+}

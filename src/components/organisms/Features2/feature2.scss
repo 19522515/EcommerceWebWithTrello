@@ -1,0 +1,18 @@
+
+.feature-2 {
+  img {
+    width: 100%;
+  }
+}
+
+@include tablet {
+  .feature-2 {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 80px !important;
+    img {
+      width: 50%;
+    }
+  }
+}
