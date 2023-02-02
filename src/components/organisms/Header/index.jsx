@@ -32,10 +32,12 @@ const Header = ({ authen }) => {
       title: "About us",
       path: "/about",
     },
+
     {
       icon: <Cart />,
       title: "Cart",
       path: "/shopping-basket",
+      
     },
     {
       icon: <User />,
@@ -120,6 +122,22 @@ const Header = ({ authen }) => {
               {item.title}
             </li>
           ))}
+          <li>
+            <a
+              href="https://19522515.github.io/Productivity-Performance-Management-System/"
+              target={'_blank'} id="kanban"
+            >
+              KanBan
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://home-kanban.vercel.app/"
+              target={'_blank'} id="kanban"
+            >
+              About KanBan
+            </a>
+          </li>
         </ul>
       </nav>
     </header>

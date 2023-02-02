@@ -1,5 +1,12 @@
 
 .landingpage-header {
+  #kanban{
+    text-decoration: none;
+    color: #726e8d !important;
+  }
+  #kanban:hover{
+    color: gray !important;
+  }
   width: 100%;
   padding: 20px 26px 0px 26px;
   position: fixed;
@@ -39,6 +46,13 @@
         border-bottom: 1px solid rgba(0, 0, 0, 0.281);
         &:last-child {
           border-bottom: none;
+        }
+        #kanban{
+          text-decoration: none;
+          color: #726e8d !important;
+        }
+        #kanban:hover{
+          color: gray !important;
         }
         ul {
           li {
